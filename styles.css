@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #E1E5F2;
+  color: #6A0135;
+  font-size: 1em;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#header-img {
+  margin-left: 30px;
+  width: 100px;
+  height: auto;
+}
+
+.nav-link {
+  color: #022B3A;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: none;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#6A0135), color-stop(50%, #6A0135), color-stop(50%, #022B3A));
+  background: linear-gradient(to right, #6A0135, #6A0135 50%, #022B3A 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+
+.nav-link:hover {
+  background-position: 0 100%;
+  font-weight: bold;
+}
+
+.navbar {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #E1E5F2;
+  text-align: end;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+#bars {
+  font-size: 1.5em;
+  color: #022B3A;
+}
+
+.contact {
+  background-color: #022B3A;
+  color: #E1E5F2;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 5px 10px;
+  text-align: center;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.contact:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #BFAB25;
+  border-radius: 7px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.contact:hover, .contact:focus, .contact:active {
+  color: #6A0135;
+}
+
+.contact:hover:before, .contact:focus:before, .contact:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.gold-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-image: url("images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.white-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+#contact {
+  height: auto;
+  padding-bottom: 115px;
+  text-align: center;
+}
+
+section {
+  padding-top: 115px;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  line-height: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+p:first-of-type {
+  font-weight: bold;
+  font-style: italic;
+  color: #022B3A;
+  font-size: 1.2em;
+}
+
+h4 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 8px #E1E5F2;
+}
+
+.title-h1 {
+  font-size: 4em;
+}
+
+#title-p {
+  color: #022B3A;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.span-text {
+  font-weight: bold;
+  color: #1F7A8C;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+.project-tile {
+  padding: 20px 10px;
+  margin: 10px;
+  background-color: rgba(31, 122, 140, 0.5);
+  text-align: center;
+  color: #E1E5F2;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.opacity-hover:hover {
+  opacity: 0.5;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #6A0135;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+span {
+  padding: 0 20px 0 10px;
+}
+
+.contact-text {
+  font-family: 'Mulish', sans-serif;
+  font-weight: normal;
+}
+
+.fa {
+  font-size: 2em;
+  text-decoration: none;
+  color: #E1E5F2;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.fa:hover, .fa:focus, .fa:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.fa:hover {
+  color: #022B3A;
+}
+
+.fa-linkedin-square {
+  padding: 0 5px 0 10px;
+}
+
+.fa-github {
+  padding: 0 10px;
+}
+
+@media (max-width: 576px) {
+  .title-h1 {
+    font-size: 2.5em;
+  }
+  #title-p {
+    font-size: 1.5em;
+  }
+  .span-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  a.fa {
+    padding: 0 0 20px 0;
+    font-size: 1.5em;
+  }
+  .contact-text {
+    padding: 0 0 0 10px;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 823px) and (orientation: landscape) {
+  a.fa {
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
